@@ -1,0 +1,2 @@
+# WM_NOTIFY
+GUIListViewEx_MsgRegister([$fNOTIFY = True, [$fMOUSEMOVE = True, [$fLBUTTONUP = True, [ $fSYSCOMMAND = True]]]]) ; Register for dragging and editing ; _GUIListViewEx_MsgRegister() ; original line commented as WM_NOTIFY is registered in this script. ; "only set unregistered messages in _GUIListViewEx_MsgRegister" _GUIListViewEx_MsgRegister(False, True, True, True) GUIRegisterMsg($WM_NOTIFY, "WM_NOTIFY") ; Set the right ListView as active _GUIListViewEx_SetActive(2) Switch _GUIListViewEx_GetActive()
